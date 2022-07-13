@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title%} Vendor admin {% endblock%}
+{% block content %}
+<div class="container">
+  <div class="">
+    <h1 class="title"> Vendor admin- {{vendor.name}}</h1>
+
+    <a class="btn btn-primary" href="{% url 'logout' %}" > Log out</a>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

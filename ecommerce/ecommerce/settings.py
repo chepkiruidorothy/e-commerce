@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-kq98%+59r7-($g*6a(6ppn9i=kdu27$vi^s#mn5q1pc7h_we+i
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL ='vendor_admin'
+LOGOUT_REDIRECT_URL ='home'
 
 # Application definition
 
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shop',
     'vendor',
+    'product',
 ]
 
 MIDDLEWARE = [

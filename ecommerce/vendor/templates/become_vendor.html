@@ -3,4 +3,20 @@
 
 {% block content%}
 <h1 class=title> Become vendor</h1>
+<form method="post" action=".">
+  {% csrf_token %}
+  {{form.as_p}}
+      <div class="field">
+        <div class="control">
+          <button  class ="btn btn-secondary" > Sign Up</button>
+        </div>
+
+      </div>
+</form>
+
+<br>
+<h2 class="subtitle">Already have an account?</h2>
+<a href="{% url 'login' %}" class="btn btn-secondary" name="button"> Log in</a>
+
+
 {%endblock%}
